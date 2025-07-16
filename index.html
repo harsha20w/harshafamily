@@ -6,7 +6,7 @@
         body {
             font-family: Arial, sans-serif;
         }
-        h1{
+        h1 {
             text-align: center;
         }
         .container {
@@ -15,164 +15,216 @@
             align-items: flex-start;
             gap: 30px;
             padding: 20px;
-            
         }
         .text {
-            
             flex: 1;
             font-style: italic;
             font-size: 26px;
             line-height: 2;
             text-align: justify;
-            
         }
-        .highlight{
+        .highlight {
             font-weight: bold;
             color: darkblue;
-            background-color: beige
-            
+            background-color: beige;
         }
-        
-
-        
-        .img{
-            width: 400pxpx;
-            height: auto;
-        }
-        
-        .photo{
+        .img {
             width: 400px;
             height: auto;
         }
-         .work{
+        .photo {
+            width: 400px;
+            height: auto;
+        }
+        .work {
             display: flex;
             flex-direction: row;
             align-items: flex-start;
             gap: 30px;
             padding: 20px;
             font-style: italic;
-             flex: 1;
+            flex: 1;
             font-style: initial;
             font-size: 26px;
             line-height: 2;
             text-align: justify;
-         }
-         .own1{
+        }
+        .own1 {
             display: flex;
             flex-direction: row;
             align-items: flex-start;
             gap: 30px;
             padding: 20px;
             font-style: italic;
-            
-         }
-         .slab1{
+        }
+        .slab1 {
             width: 400px;
-
-         }
-         .para{
-             flex: 1;
+        }
+        .para {
+            flex: 1;
             font-style: initial;
             font-size: 23px;
             line-height: 1.6;
             text-align: justify;
             width: 400px;
-         }
-         .can{
-             display: flex;
+        }
+        .can {
+            display: flex;
             flex-direction: row;
             align-items: flex-start;
             gap: 30px;
             padding: 20px;
-              flex: 1;
+            flex: 1;
             font-style: italic;
             font-size: 30px;
             line-height: 1.6;
             text-align: justify;
             color: red;
-            
-         }
-         .sar{
+        }
+        .sar {
             width: 400px;
             height: 520px;
-         }
-         .fam{
+        }
+        .fam {
             color: blue;
-            
-         }
-         .birth{
-             display: flex;
+        }
+        .birth {
+            display: flex;
             flex-direction: row;
             align-items: flex-start;
             gap: 30px;
             padding: 20px;
-              flex: 1;
+            flex: 1;
             font-style: italic;
             font-size: 30px;
             line-height: 1.6;
             text-align: justify;
             color: red;
-            
-         }
-         .sar1{
+        }
+        .sar1 {
             width: 500px;
             height: 150px;
-         }
-         .fam1{
+        }
+        .fam1 {
             color: lightgreen;
-             flex: 1;
+            flex: 1;
             font-style: italic;
             font-size: 30px;
             line-height: 1.6;
             text-align: justify;
-         }
-       .puru{
-        width: 400px;
-        height: 350px;
-       }
-                
-</style>
+        }
+        .puru {
+            width: 400px;
+            height: 350px;
+        }
+
+        /* Responsive Styling */
+        @media (max-width: 1024px) {
+            .container, .work, .own1, .can, .birth {
+                flex-direction: column;
+                align-items: center;
+                text-align: justify;
+            }
+
+            .photo, .sar, .sar1, .puru, .slab1, .para, .fam1 {
+                width: 90%;
+                height: auto;
+            }
+
+            .text, .para, .fam1 {
+                font-size: 22px;
+            }
+
+            img {
+                max-width: 100%;
+                height: auto;
+            }
+
+            video {
+                width: 100%;
+                height: auto;
+            }
+        }
+
+        @media (max-width: 600px) {
+            .text, .para, .fam1 {
+                font-size: 18px;
+                line-height: 1.5;
+                padding: 10px;
+            }
+
+            h1 {
+                font-size: 24px;
+            }
+
+            .container, .work, .own1, .can, .birth {
+                padding: 10px;
+                gap: 15px;
+            }
+
+            .sar, .sar1, .photo, .puru {
+                width: 100%;
+                height: auto;
+            }
+
+            .fam1 {
+                font-size: 18px;
+            }
+        }
+    </style>
 </head>
 <body>
 
     <h1><u>Mr&amp;Mrs. Kalappa&amp;Family</u></h1>
 
     <div class="container">
-        <img  width="400px"  src="img/kalappa.jpg" alt="kalappa" width="400px">
-        <p class="text">This is about one of the happiest families.Myself<span class="highlight"> Kalappa</span> and My better half name is <span class="highlight">Saradha</span> we got married in <span class="highlight">2000 february 11</span> we have blessed with two childrens one is <span class="highlight"> yeswanth in 2001 april 13</span> and another one is<span class="highlight"> harshavardhan in 2003 june 14</span>.i'm the one who carries my family responsibilities from my young age 14 i stopped my studies becouse of financial problems at that time we have public exams for both 7th and 10th class and i topped in the 7th class public exams after that i stopped my studies because of family problems and some financial issue.After that i used to do work to carry my family my mother sells vegitables and my father was died my brother is not at all reddy to carry our family and i'm the one who taken all my family responsibilities.i used to do labour work in the centering field after some years i learned </span></p>
-    </div>
-    <div class="work">
-        <img class="photo"  src="img/bheem work.jpg" alt="bheem work"
-        <p class="the">This is the staring of the work in which we need take the length,width and height of the house which is to constructed and that wisely we need arrange the all set of instruments like sheets,posts,wood,rod cutting michanes and wood cutting blades etc.., </p>
+        <img width="400px" src="img/kalappa.jpg" alt="kalappa">
+        <p class="text">This is about one of the happiest families. Myself <span class="highlight">Kalappa</span> and My better half name is <span class="highlight">Saradha</span>. We got married in <span class="highlight">2000 February 11</span>. We are blessed with two children, one is <span class="highlight">Yeswanth in 2001 April 13</span> and another one is <span class="highlight">Harshavardhan in 2003 June 14</span>. I'm the one who carries my family responsibilities from a young age. At 14 I stopped my studies because of financial problems. At that time we had public exams for both 7th and 10th class and I topped in the 7th class public exams. After that I stopped my studies and started working to support my family. My mother sold vegetables, my father had passed away, and my brother was not ready to take responsibility. I did labour work in the centering field, and after some years, I learned.</p>
     </div>
 
-   <div class="own">
-    <h2><u>DIFFEREMT TYPE OF SHEETS</u></h2>
-    <img width="1500px" src="img/sheets shed.jpg"
-   </div> 
-   <div >
-    <img width="1500px" src="img/shed.jpg"
-   </div>
-<div class="own1">
-    <img class="slab" width="500px" height="auto" src="img/slap $dad.jpg"
-   </div>
-   <p class="para">After the complition work in basement then the slab work starts we need to construct this by using rods of different sizes based on bulding complications and that construction of slab looks like above the image</p>
-   <video width="400px" autoplay muted loop>
-    <source src="video/slab11.mp4" type="video/mp4">
-   </video>
-</div>
-<div class="can">
-    <img class="sar" src="img/lalappa saradha.jpg"
-    <p class="fam">This is my better half Saradha we got married in february 9th 2000, we have two childrens my elder son name is yeswanth who was born on 2001 april 11, and my younger son name is harshavardhan who was born on 2003 june 4th. my elder son yeswanth was recently passed away in an bike accident in 2021 november 4th from on that day off-off my family where saded to live rest of our lives and he is the most favourite child for our whole family from that day to till now we are not able to belive that my elder son was passed away even on the death cermony day nearly thousands off pepoles where sourunded it is enough to tell that what he is and we still can't belivie that he is no mre with us and my another son is recently graduated in bacholers degree in electrical stream and now he is currntly learning a course to get a job in IT field.</p>
-</div>
-<div class="can">
-    <img class="sar1" width="00px" src="img/puru.jpg"
-    <p class="fam1">i have another son  who is with me since he was younger to till now and we do work together he is the only person who lisned my words and do what i say without any hesitation and reddy to do what i say he is mr&mrs.Purushotham </p>
-</div>
-<div class="can">
-    <img width="200px" src="img/puru22.jpg"
-</div>
-<p class="fam1">Mr&Mrs.Purushotham was married to Nalini in 2009 february 11th and they where happy couples recenyly they have been blesed with a baby girl in 2023 september 15th and her name is Mokshitha one and only baby girl in the family. </p>
-<div>
-    <img width="200px" height="360px" src="img/mokshi.jpg"
-</div>
+    <div class="work">
+        <img class="photo" src="img/bheem work.jpg" alt="bheem work">
+        <p class="the">This is the starting of the work where we need to take the length, width, and height of the house to be constructed. We must wisely arrange all the instruments like sheets, posts, wood, rod cutting machines, and wood cutting blades etc.</p>
+    </div>
+
+    <div class="own">
+        <h2><u>DIFFERENT TYPE OF SHEETS</u></h2>
+        <img width="1500px" src="img/sheets shed.jpg" alt="sheet types">
+    </div>
+
+    <div>
+        <img width="1500px" src="img/shed.jpg" alt="shed">
+    </div>
+
+    <div class="own1">
+        <img class="slab" width="500px" src="img/slap $dad.jpg" alt="slab">
+    </div>
+
+    <p class="para">After the completion work in basement, then the slab work starts. We need to construct this by using rods of different sizes based on building complications. That construction of slab looks like the above image.</p>
+
+    <video width="400px" autoplay muted loop>
+        <source src="video/slab11.mp4" type="video/mp4">
+    </video>
+
+    <div class="can">
+        <img class="sar" src="img/lalappa saradha.jpg" alt="saradha">
+        <p class="fam">This is my better half Saradha. We got married on February 9th, 2000. We have two children — my elder son Yeswanth was born on April 11, 2001, and my younger son Harshavardhan on June 4, 2003. My elder son passed away in a bike accident on November 4, 2021. From that day, my family has been heartbroken. He was the most beloved child in our entire family. Even during his death ceremony, thousands of people gathered — a sign of how special he was. My younger son has recently graduated in Electrical Engineering and is now learning a course to get into the IT field.</p>
+    </div>
+
+    <div class="can">
+        <img class="sar1" src="img/puru.jpg" alt="purushotham">
+        <p class="fam1">I have another son who has been with me since childhood. We work together. He listens to everything I say without hesitation. He is Mr. & Mrs. Purushotham.</p>
+    </div>
+
+    <div class="can">
+        <img width="200px" src="img/puru22.jpg" alt="purushotham couple">
+    </div>
+
+    <p class="fam1">Mr. & Mrs. Purushotham were married on February 11, 2009. They are a happy couple and were recently blessed with a baby girl on September 15, 2023, named Mokshitha — the one and only baby girl in the family.</p>
+
+    <div>
+        <img width="200px" height="360px" src="img/mokshi.jpg" alt="mokshitha">
+    </div>
+
+</body>
+</html>
